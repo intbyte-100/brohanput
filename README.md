@@ -4,7 +4,7 @@ Here’s a revised version of your README text in English:
 
 # Accessibility Program for Users with Injured Hands
 
-I broke a finger on my left hand in late October 2024, which inspired me to create this project. This program allows you to input text on your laptop or desktop computer using your mobile phone and only one hand!. 
+I broke a finger on my left hand in begin of October 2024, which inspired me to create this project. This program allows you to input text on your laptop or desktop computer using your mobile phone and only one hand!. 
 
 To get started, run the following command:
 
