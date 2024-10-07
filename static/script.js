@@ -16,6 +16,11 @@ async function handleInputChange(event) {
     let inputText = inputField.value;
     inputField.value = '  ';
     
+    setTimeout(()=>{
+        inputField.focus();
+        inputField.setSelectionRange(2,2);
+    });
+    
     if (inputText.length < 2) {
         await fetch('/backspace', { method: 'POST' });
         return;
