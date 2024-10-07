@@ -1,6 +1,4 @@
-Here’s a revised version of your README text in English:
 
----
 
 # Accessibility Program for Users with Injured Hands
 
