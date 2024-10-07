@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit Text on Change</title>
+    <link rel="stylesheet" href="/static/styles.css">
+    <script src="/static/script.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Brohanput</h1>
+        <form onsubmit="handleSubmit(event)">
+            <input type="text" id="inputText" name="inputText" oninput="handleInputChange(event)" required value="  ">
+        </form>     
+        <div class="button-container">
+            <button 
+                id="controlButton" 
+                ontouchend="toggleControl()"
+                ontouchstart="preventKeyboardHide(event)"
+                class="toggle-button">Control (OFF)</button>
+            <button 
+                ontouchstart="handleArrowKeyPress('left', event)" 
+                ontouchend="stopArrowKeyPress()">←</button>
+            <button 
+                ontouchstart="handleArrowKeyPress('right', event)" 
+                ontouchend="stopArrowKeyPress()">→</button>
+            <button 
+                id="shiftButton" 
+                ontouchend="toggleShift()"
+                ontouchstart="preventKeyboardHide(event)"
+                class="toggle-button">Shift (OFF)</button>
+            <button 
+                ontouchstart="handleArrowKeyPress('up', event)" 
+                ontouchend="stopArrowKeyPress()">↑</button>
+            <button 
+                ontouchstart="handleArrowKeyPress('down', event)" 
+                ontouchend="stopArrowKeyPress()">↓</button>
+            <button 
+                ontouchend="handleTab('tab')"
+                ontouchstart="preventKeyboardHide(event)">Tab</button>
+            
+        </div>
+    </div>
+</body>
+
+</html>
